@@ -49,8 +49,8 @@ namespace TesteImposto
         private void buttonGerarNotaFiscal_Click(object sender, EventArgs e)
         {            
             NotaFiscalService service = new NotaFiscalService();
-            pedido.EstadoOrigem = txtEstadoOrigem.Text;
-            pedido.EstadoDestino = txtEstadoDestino.Text;
+            pedido.EstadoOrigem = txtEstadoOrigem.Text.ToUpper();
+            pedido.EstadoDestino = txtEstadoDestino.Text.ToUpper();
             pedido.NomeCliente = textBoxNomeCliente.Text;
 
             DataTable table = (DataTable)dataGridViewPedidos.DataSource;
