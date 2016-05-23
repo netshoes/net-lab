@@ -1,0 +1,15 @@
+E:\_Pessoal\Jobs\Netshoes\TesteImposto\Imposto.Test\bin\Debug\Imposto.Test.dll
+E:\_Pessoal\Jobs\Netshoes\TesteImposto\Imposto.Test\bin\Debug\Imposto.Test.pdb
+E:\_Pessoal\Jobs\Netshoes\TesteImposto\Imposto.Test\bin\Debug\FluentAssertions.Core.dll
+E:\_Pessoal\Jobs\Netshoes\TesteImposto\Imposto.Test\bin\Debug\FluentAssertions.dll
+E:\_Pessoal\Jobs\Netshoes\TesteImposto\Imposto.Test\bin\Debug\Imposto.Core.dll
+E:\_Pessoal\Jobs\Netshoes\TesteImposto\Imposto.Test\bin\Debug\nunit.framework.dll
+E:\_Pessoal\Jobs\Netshoes\TesteImposto\Imposto.Test\bin\Debug\Imposto.Core.pdb
+E:\_Pessoal\Jobs\Netshoes\TesteImposto\Imposto.Test\bin\Debug\FluentAssertions.pdb
+E:\_Pessoal\Jobs\Netshoes\TesteImposto\Imposto.Test\bin\Debug\FluentAssertions.xml
+E:\_Pessoal\Jobs\Netshoes\TesteImposto\Imposto.Test\bin\Debug\FluentAssertions.Core.pdb
+E:\_Pessoal\Jobs\Netshoes\TesteImposto\Imposto.Test\bin\Debug\FluentAssertions.Core.xml
+E:\_Pessoal\Jobs\Netshoes\TesteImposto\Imposto.Test\bin\Debug\nunit.framework.xml
+E:\_Pessoal\Jobs\Netshoes\TesteImposto\Imposto.Test\obj\Debug\Imposto.Test.csprojResolveAssemblyReference.cache
+E:\_Pessoal\Jobs\Netshoes\TesteImposto\Imposto.Test\obj\Debug\Imposto.Test.dll
+E:\_Pessoal\Jobs\Netshoes\TesteImposto\Imposto.Test\obj\Debug\Imposto.Test.pdb
