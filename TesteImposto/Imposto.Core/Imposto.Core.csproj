@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,7 +41,31 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\NotaFiscalRepository.cs" />
+    <Compile Include="Domain\Calculos\CalculadoraCfop.cs" />
+    <Compile Include="Domain\Calculos\CalculoCfopFactory.cs" />
+    <Compile Include="Domain\Calculos\CfopStrategy\CfopMGParaMGStrategy.cs" />
+    <Compile Include="Domain\Calculos\CfopStrategy\CfopMGParaPAStrategy.cs" />
+    <Compile Include="Domain\Calculos\CfopStrategy\CfopMGParaPBStrategy.cs" />
+    <Compile Include="Domain\Calculos\CfopStrategy\CfopMGParaPEStrategy.cs" />
+    <Compile Include="Domain\Calculos\CfopStrategy\CfopMGParaPIStrategy.cs" />
+    <Compile Include="Domain\Calculos\CfopStrategy\CfopMGParaPRStrategy.cs" />
+    <Compile Include="Domain\Calculos\CfopStrategy\CfopMGParaRJStrategy.cs" />
+    <Compile Include="Domain\Calculos\CfopStrategy\CfopMGParaSEStrategy.cs" />
+    <Compile Include="Domain\Calculos\CfopStrategy\CfopMGParaTOStrategy.cs" />
+    <Compile Include="Domain\Calculos\CfopStrategy\CfopSPParaSPStrategy.cs" />
+    <Compile Include="Domain\Calculos\CfopStrategy\CfopSPParaPAStrategy.cs" />
+    <Compile Include="Domain\Calculos\CfopStrategy\CfopSPParaTOStrategy.cs" />
+    <Compile Include="Domain\Calculos\CfopStrategy\CfopSPParaPIStrategy.cs" />
+    <Compile Include="Domain\Calculos\CfopStrategy\CfopSPParaROStrategy.cs" />
+    <Compile Include="Domain\Calculos\CfopStrategy\CfopSPParaSEStrategy.cs" />
+    <Compile Include="Domain\Calculos\CfopStrategy\CfopSPParaPRStrategy.cs" />
+    <Compile Include="Domain\Calculos\CfopStrategy\CfopSPParaMGStrategy.cs" />
+    <Compile Include="Domain\Calculos\CfopStrategy\CfopSPParaPBStrategy.cs" />
+    <Compile Include="Domain\Calculos\CfopStrategy\CfopSPParaPEStrategy.cs" />
+    <Compile Include="Domain\Calculos\CfopStrategy\CfopSPParaRJStrategy.cs" />
+    <Compile Include="Domain\Calculos\ICalculoCfopStrategy.cs" />
     <Compile Include="Domain\NotaFiscal.cs" />
+    <Compile Include="Domain\NotaFiscalFactory.cs" />
     <Compile Include="Domain\NotaFiscalItem.cs" />
     <Compile Include="Domain\Pedido.cs" />
     <Compile Include="Domain\PedidoItem.cs" />

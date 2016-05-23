@@ -1,18 +1,25 @@
-﻿using Imposto.Core.Domain;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Imposto.Core.Data;
+using Imposto.Core.Domain;
 
 namespace Imposto.Core.Service
 {
     public class NotaFiscalService
     {
-        public void GerarNotaFiscal(Domain.Pedido pedido)
+        private readonly NotaFiscalRepository _repository;
+
+        public NotaFiscalService()
         {
-            NotaFiscal notaFiscal = new NotaFiscal();
-            notaFiscal.EmitirNotaFiscal(pedido);
+            _repository = new NotaFiscalRepository();
+        }
+
+        public void GerarNotaFiscal(Pedido pedido)
+        {
+            var nota = new NotaFiscalFactory(pedido).Criar();
+
+            if (_repository.SalvarXml(nota))
+            {
+                _repository.Salvar(nota);
+            }
         }
     }
 }
