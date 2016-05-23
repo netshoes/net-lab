@@ -1,0 +1,5 @@
+E:\_Pessoal\Jobs\Netshoes\TesteImposto\Imposto.Core\bin\Debug\Imposto.Core.dll
+E:\_Pessoal\Jobs\Netshoes\TesteImposto\Imposto.Core\bin\Debug\Imposto.Core.pdb
+E:\_Pessoal\Jobs\Netshoes\TesteImposto\Imposto.Core\obj\Debug\Imposto.Core.csprojResolveAssemblyReference.cache
+E:\_Pessoal\Jobs\Netshoes\TesteImposto\Imposto.Core\obj\Debug\Imposto.Core.dll
+E:\_Pessoal\Jobs\Netshoes\TesteImposto\Imposto.Core\obj\Debug\Imposto.Core.pdb
