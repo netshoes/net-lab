@@ -1,6 +1,3 @@
-USE [Teste]
-GO
-
 /****** Object:  Table [dbo].[NotaFiscal]    Script Date: 24/07/2015 11:58:44 ******/
 SET ANSI_NULLS ON
 GO
@@ -36,6 +33,9 @@ CREATE TABLE [dbo].[NotaFiscalItem](
 	[ValorIcms] [decimal](18, 5) NULL,
 	[NomeProduto] [varchar](50) NULL,
 	[CodigoProduto] [varchar](20) NULL,
+	[AliquotaIpi] [decimal](18, 5) NULL,
+	[ValorIpi] [decimal](18, 5) NULL,
+	[Desconto] [decimal](18, 5) NULL,
  CONSTRAINT [PK_NotaFiscalItem] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
@@ -47,11 +47,6 @@ GO
 SET ANSI_PADDING OFF
 GO
 
-ALTER TABLE [dbo].[NotaFiscalItem]  WITH CHECK ADD  CONSTRAINT [FK_NotaFiscal] FOREIGN KEY([Id])
-REFERENCES [dbo].[NotaFiscalItem] ([Id])
+ALTER TABLE [dbo].[NotaFiscalItem]  WITH CHECK ADD  CONSTRAINT [FK_NotaFiscal] FOREIGN KEY([IdNotaFiscal])
+REFERENCES [dbo].[NotaFiscal] ([Id])
 GO
-
-ALTER TABLE [dbo].[NotaFiscalItem] CHECK CONSTRAINT [FK_NotaFiscal]
-GO
-
-

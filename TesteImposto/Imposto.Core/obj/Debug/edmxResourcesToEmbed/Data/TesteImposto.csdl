@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TesteImpostoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="NotaFiscal">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NumeroNotaFiscal" Type="Int32" />
+    <Property Name="Serie" Type="Int32" />
+    <Property Name="NomeCliente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EstadoDestino" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EstadoOrigem" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="NotaFiscalItems" Relationship="Self.FK_NotaFiscal" FromRole="NotaFiscal" ToRole="NotaFiscalItem" />
+  </EntityType>
+  <EntityType Name="NotaFiscalItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdNotaFiscal" Type="Int32" />
+    <Property Name="Cfop" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="TipoIcms" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="BaseIcms" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="AliquotaIcms" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="ValorIcms" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="NomeProduto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CodigoProduto" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="NotaFiscal" Relationship="Self.FK_NotaFiscal" FromRole="NotaFiscalItem" ToRole="NotaFiscal" />
+    <Property Name="AliquotaIpi" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="ValorIpi" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="Desconto" Type="Decimal" Precision="18" Scale="5" />
+  </EntityType>
+  <Association Name="FK_NotaFiscal">
+    <End Role="NotaFiscal" Type="Self.NotaFiscal" Multiplicity="0..1" />
+    <End Role="NotaFiscalItem" Type="Self.NotaFiscalItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NotaFiscal">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NotaFiscalItem">
+        <PropertyRef Name="IdNotaFiscal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="TesteImpostoEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="NotaFiscals" EntityType="Self.NotaFiscal" />
+    <EntitySet Name="NotaFiscalItems" EntityType="Self.NotaFiscalItem" />
+    <AssociationSet Name="FK_NotaFiscal" Association="Self.FK_NotaFiscal">
+      <End Role="NotaFiscal" EntitySet="NotaFiscals" />
+      <End Role="NotaFiscalItem" EntitySet="NotaFiscalItems" />
+    </AssociationSet>
+    <FunctionImport Name="P_NOTA_FISCAL">
+      <Parameter Name="pId" Mode="InOut" Type="Int32" />
+      <Parameter Name="pNumeroNotaFiscal" Mode="In" Type="Int32" />
+      <Parameter Name="pSerie" Mode="In" Type="Int32" />
+      <Parameter Name="pNomeCliente" Mode="In" Type="String" />
+      <Parameter Name="pEstadoDestino" Mode="In" Type="String" />
+      <Parameter Name="pEstadoOrigem" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="P_NOTA_FISCAL_ITEM">
+      <Parameter Name="pId" Mode="In" Type="Int32" />
+      <Parameter Name="pIdNotaFiscal" Mode="In" Type="Int32" />
+      <Parameter Name="pCfop" Mode="In" Type="String" />
+      <Parameter Name="pTipoIcms" Mode="In" Type="String" />
+      <Parameter Name="pBaseIcms" Mode="In" Type="Decimal" />
+      <Parameter Name="pAliquotaIcms" Mode="In" Type="Decimal" />
+      <Parameter Name="pValorIcms" Mode="In" Type="Decimal" />
+      <Parameter Name="pNomeProduto" Mode="In" Type="String" />
+      <Parameter Name="pCodigoProduto" Mode="In" Type="String" />
+      <Parameter Name="pAliquotaIpi" Mode="In" Type="Decimal" />
+      <Parameter Name="pValorIpi" Mode="In" Type="Decimal" />
+      <Parameter Name="pDesconto" Mode="In" Type="Decimal" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>

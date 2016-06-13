@@ -1,0 +1,10 @@
+C:\Users\Gleydson\Source\Repos\net-lab\TesteImposto\Imposto.Core\bin\Debug\Data\TesteImposto.mdf
+C:\Users\Gleydson\Source\Repos\net-lab\TesteImposto\Imposto.Core\bin\Debug\Data\TesteImposto_log.ldf
+C:\Users\Gleydson\Source\Repos\net-lab\TesteImposto\Imposto.Core\bin\Debug\Imposto.Core.dll.config
+C:\Users\Gleydson\Source\Repos\net-lab\TesteImposto\Imposto.Core\bin\Debug\Imposto.Core.dll
+C:\Users\Gleydson\Source\Repos\net-lab\TesteImposto\Imposto.Core\bin\Debug\Imposto.Core.pdb
+C:\Users\Gleydson\Source\Repos\net-lab\TesteImposto\Imposto.Core\bin\Debug\EntityFramework.dll
+C:\Users\Gleydson\Source\Repos\net-lab\TesteImposto\Imposto.Core\bin\Debug\EntityFramework.xml
+C:\Users\Gleydson\Source\Repos\net-lab\TesteImposto\Imposto.Core\obj\Debug\Imposto.Core.csprojResolveAssemblyReference.cache
+C:\Users\Gleydson\Source\Repos\net-lab\TesteImposto\Imposto.Core\obj\Debug\Imposto.Core.dll
+C:\Users\Gleydson\Source\Repos\net-lab\TesteImposto\Imposto.Core\obj\Debug\Imposto.Core.pdb

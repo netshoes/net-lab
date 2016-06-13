@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NotaFiscal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>0</Id>
+  <NumeroNotaFiscal>99999</NumeroNotaFiscal>
+  <Serie>250777077</Serie>
+  <NomeCliente>Cliente</NomeCliente>
+  <EstadoDestino>SP</EstadoDestino>
+  <EstadoOrigem>SP</EstadoOrigem>
+  <ItensDaNotaFiscal>
+    <NotaFiscalItem>
+      <Id>0</Id>
+      <IdNotaFiscal>0</IdNotaFiscal>
+      <Cfop>6.009</Cfop>
+      <TipoIcms>60</TipoIcms>
+      <BaseIcms>0.81</BaseIcms>
+      <AliquotaIcms>0.18</AliquotaIcms>
+      <ValorIcms>0.1458</ValorIcms>
+      <NomeProduto>Produto</NomeProduto>
+      <CodigoProduto>Produto</CodigoProduto>
+      <AliquotaIpi>0.1</AliquotaIpi>
+      <ValorIpi>0.081000000000000016</ValorIpi>
+      <Desconto>0.1</Desconto>
+    </NotaFiscalItem>
+    <NotaFiscalItem>
+      <Id>0</Id>
+      <IdNotaFiscal>0</IdNotaFiscal>
+      <Cfop>6.009</Cfop>
+      <TipoIcms>60</TipoIcms>
+      <BaseIcms>0.405</BaseIcms>
+      <AliquotaIcms>0.18</AliquotaIcms>
+      <ValorIcms>0.0729</ValorIcms>
+      <NomeProduto>Brinde</NomeProduto>
+      <CodigoProduto>Brinde</CodigoProduto>
+      <AliquotaIpi>0</AliquotaIpi>
+      <ValorIpi>0</ValorIpi>
+      <Desconto>0.1</Desconto>
+    </NotaFiscalItem>
+  </ItensDaNotaFiscal>
+</NotaFiscal>
