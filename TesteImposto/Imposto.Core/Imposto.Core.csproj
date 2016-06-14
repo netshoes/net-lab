@@ -11,6 +11,21 @@
     <AssemblyName>Imposto.Core</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,16 +45,37 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\NotaFiscal.cs">
+      <DependentUpon>TesteImposto.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\NotaFiscalItem.cs">
+      <DependentUpon>TesteImposto.tt</DependentUpon>
+    </Compile>
     <Compile Include="Data\NotaFiscalRepository.cs" />
+    <Compile Include="Data\TesteImposto.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TesteImposto.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TesteImposto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TesteImposto.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TesteImposto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TesteImposto.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Domain\NotaFiscal.cs" />
     <Compile Include="Domain\NotaFiscalItem.cs" />
     <Compile Include="Domain\Pedido.cs" />
@@ -47,7 +83,51 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\NotaFiscalService.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Data\TesteImposto.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TesteImposto.edmx</DependentUpon>
+      <LastGenOutput>TesteImposto.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Data\TesteImposto.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\TesteImposto.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TesteImposto.edmx</DependentUpon>
+      <LastGenOutput>TesteImposto.cs</LastGenOutput>
+    </Content>
+    <Content Include="Data\TesteImposto_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>TesteImposto.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EntityDeploy Include="Data\TesteImposto.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>TesteImposto.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Data\TesteImposto.edmx.diagram">
+      <DependentUpon>TesteImposto.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -1,5 +1,3 @@
-USE [Teste]
-GO
 IF OBJECT_ID('dbo.P_NOTA_FISCAL_ITEM') IS NOT NULL
 BEGIN
     DROP PROCEDURE dbo.P_NOTA_FISCAL_ITEM
@@ -23,7 +21,10 @@ CREATE PROCEDURE P_NOTA_FISCAL_ITEM
     @pAliquotaIcms decimal(18,5),
     @pValorIcms decimal(18,5),
     @pNomeProduto varchar(50),
-    @pCodigoProduto varchar(20)
+    @pCodigoProduto varchar(20),
+    @pAliquotaIpi decimal(18,5),
+    @pValorIpi decimal(18,5),
+    @pDesconto decimal(18,5)
 )
 AS
 BEGIN
@@ -37,7 +38,10 @@ BEGIN
            ,[AliquotaIcms]
            ,[ValorIcms]
            ,[NomeProduto]
-           ,[CodigoProduto])
+           ,[CodigoProduto]
+           ,[AliquotaIpi]
+           ,[ValorIpi]
+           ,[Desconto])
 		VALUES
            (@pIdNotaFiscal,
 			@pCfop,
@@ -46,7 +50,10 @@ BEGIN
 			@pAliquotaIcms,
 			@pValorIcms,
 			@pNomeProduto,
-			@pCodigoProduto)
+			@pCodigoProduto,
+			@pAliquotaIpi,
+			@pValorIpi,
+			@pDesconto)
 
 		SET @pId = @@IDENTITY
 	END
@@ -61,6 +68,9 @@ BEGIN
 			,[ValorIcms] = @pValorIcms
 			,[NomeProduto] = @pNomeProduto
 			,[CodigoProduto] = @pCodigoProduto
+			,[AliquotaIpi] = @pAliquotaIpi
+			,[ValorIpi] = @pValorIpi
+			,[Desconto] = @pDesconto
 		 WHERE Id = @pId
 	END	    
 END

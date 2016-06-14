@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TesteImpostoModelStoreContainer" CdmEntityContainer="TesteImpostoEntities">
+    <EntitySetMapping Name="NotaFiscals">
+      <EntityTypeMapping TypeName="TesteImpostoModel.NotaFiscal">
+        <MappingFragment StoreEntitySet="NotaFiscal">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NumeroNotaFiscal" ColumnName="NumeroNotaFiscal" />
+          <ScalarProperty Name="Serie" ColumnName="Serie" />
+          <ScalarProperty Name="NomeCliente" ColumnName="NomeCliente" />
+          <ScalarProperty Name="EstadoDestino" ColumnName="EstadoDestino" />
+          <ScalarProperty Name="EstadoOrigem" ColumnName="EstadoOrigem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NotaFiscalItems">
+      <EntityTypeMapping TypeName="TesteImpostoModel.NotaFiscalItem">
+        <MappingFragment StoreEntitySet="NotaFiscalItem">
+          <ScalarProperty Name="Desconto" ColumnName="Desconto" />
+          <ScalarProperty Name="ValorIpi" ColumnName="ValorIpi" />
+          <ScalarProperty Name="AliquotaIpi" ColumnName="AliquotaIpi" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdNotaFiscal" ColumnName="IdNotaFiscal" />
+          <ScalarProperty Name="Cfop" ColumnName="Cfop" />
+          <ScalarProperty Name="TipoIcms" ColumnName="TipoIcms" />
+          <ScalarProperty Name="BaseIcms" ColumnName="BaseIcms" />
+          <ScalarProperty Name="AliquotaIcms" ColumnName="AliquotaIcms" />
+          <ScalarProperty Name="ValorIcms" ColumnName="ValorIcms" />
+          <ScalarProperty Name="NomeProduto" ColumnName="NomeProduto" />
+          <ScalarProperty Name="CodigoProduto" ColumnName="CodigoProduto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="P_NOTA_FISCAL" FunctionName="TesteImpostoModel.Store.P_NOTA_FISCAL" />
+    <FunctionImportMapping FunctionImportName="P_NOTA_FISCAL_ITEM" FunctionName="TesteImpostoModel.Store.P_NOTA_FISCAL_ITEM" />
+  </EntityContainerMapping>
+</Mapping>

@@ -69,23 +69,27 @@
             // 
             // textBoxNomeCliente
             // 
+            this.textBoxNomeCliente.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxNomeCliente.Location = new System.Drawing.Point(95, 9);
             this.textBoxNomeCliente.Name = "textBoxNomeCliente";
-            this.textBoxNomeCliente.Size = new System.Drawing.Size(939, 20);
+            this.textBoxNomeCliente.Size = new System.Drawing.Size(555, 20);
             this.textBoxNomeCliente.TabIndex = 3;
             // 
             // txtEstadoOrigem
             // 
             this.txtEstadoOrigem.Location = new System.Drawing.Point(95, 31);
+            this.txtEstadoOrigem.MaxLength = 2;
             this.txtEstadoOrigem.Name = "txtEstadoOrigem";
-            this.txtEstadoOrigem.Size = new System.Drawing.Size(939, 20);
+            this.txtEstadoOrigem.Size = new System.Drawing.Size(28, 20);
             this.txtEstadoOrigem.TabIndex = 4;
             // 
             // txtEstadoDestino
             // 
             this.txtEstadoDestino.Location = new System.Drawing.Point(95, 53);
+            this.txtEstadoDestino.MaxLength = 2;
             this.txtEstadoDestino.Name = "txtEstadoDestino";
-            this.txtEstadoDestino.Size = new System.Drawing.Size(939, 20);
+            this.txtEstadoDestino.Size = new System.Drawing.Size(28, 20);
             this.txtEstadoDestino.TabIndex = 5;
             // 
             // label4
@@ -100,15 +104,19 @@
             // dataGridViewPedidos
             // 
             this.dataGridViewPedidos.AllowUserToOrderColumns = true;
+            this.dataGridViewPedidos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewPedidos.Location = new System.Drawing.Point(6, 109);
             this.dataGridViewPedidos.Name = "dataGridViewPedidos";
-            this.dataGridViewPedidos.Size = new System.Drawing.Size(1028, 325);
+            this.dataGridViewPedidos.Size = new System.Drawing.Size(644, 325);
             this.dataGridViewPedidos.TabIndex = 7;
             // 
             // buttonGerarNotaFiscal
             // 
-            this.buttonGerarNotaFiscal.Location = new System.Drawing.Point(907, 440);
+            this.buttonGerarNotaFiscal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonGerarNotaFiscal.Location = new System.Drawing.Point(523, 440);
             this.buttonGerarNotaFiscal.Name = "buttonGerarNotaFiscal";
             this.buttonGerarNotaFiscal.Size = new System.Drawing.Size(127, 23);
             this.buttonGerarNotaFiscal.TabIndex = 8;
@@ -120,7 +128,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1043, 477);
+            this.ClientSize = new System.Drawing.Size(659, 477);
             this.Controls.Add(this.buttonGerarNotaFiscal);
             this.Controls.Add(this.dataGridViewPedidos);
             this.Controls.Add(this.label4);
@@ -131,7 +139,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FormImposto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculo de imposto";
+            this.Resize += new System.EventHandler(this.FormImposto_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedidos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

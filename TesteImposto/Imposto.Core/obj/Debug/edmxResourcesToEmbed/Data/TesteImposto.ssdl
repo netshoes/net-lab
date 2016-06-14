@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TesteImpostoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="NotaFiscal">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NumeroNotaFiscal" Type="int" />
+    <Property Name="Serie" Type="int" />
+    <Property Name="NomeCliente" Type="varchar" MaxLength="50" />
+    <Property Name="EstadoDestino" Type="varchar" MaxLength="50" />
+    <Property Name="EstadoOrigem" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="NotaFiscalItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdNotaFiscal" Type="int" />
+    <Property Name="Cfop" Type="varchar" MaxLength="5" />
+    <Property Name="TipoIcms" Type="varchar" MaxLength="20" />
+    <Property Name="BaseIcms" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="AliquotaIcms" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="ValorIcms" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="NomeProduto" Type="varchar" MaxLength="50" />
+    <Property Name="CodigoProduto" Type="varchar" MaxLength="20" />
+    <Property Name="AliquotaIpi" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="ValorIpi" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="Desconto" Type="decimal" Precision="18" Scale="5" />
+  </EntityType>
+  <Association Name="FK_NotaFiscal">
+    <End Role="NotaFiscal" Type="Self.NotaFiscal" Multiplicity="0..1" />
+    <End Role="NotaFiscalItem" Type="Self.NotaFiscalItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NotaFiscal">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NotaFiscalItem">
+        <PropertyRef Name="IdNotaFiscal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="P_NOTA_FISCAL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="pId" Type="int" Mode="InOut" />
+    <Parameter Name="pNumeroNotaFiscal" Type="int" Mode="In" />
+    <Parameter Name="pSerie" Type="int" Mode="In" />
+    <Parameter Name="pNomeCliente" Type="varchar" Mode="In" />
+    <Parameter Name="pEstadoDestino" Type="varchar" Mode="In" />
+    <Parameter Name="pEstadoOrigem" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="P_NOTA_FISCAL_ITEM" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="pId" Type="int" Mode="In" />
+    <Parameter Name="pIdNotaFiscal" Type="int" Mode="In" />
+    <Parameter Name="pCfop" Type="varchar" Mode="In" />
+    <Parameter Name="pTipoIcms" Type="varchar" Mode="In" />
+    <Parameter Name="pBaseIcms" Type="decimal" Mode="In" />
+    <Parameter Name="pAliquotaIcms" Type="decimal" Mode="In" />
+    <Parameter Name="pValorIcms" Type="decimal" Mode="In" />
+    <Parameter Name="pNomeProduto" Type="varchar" Mode="In" />
+    <Parameter Name="pCodigoProduto" Type="varchar" Mode="In" />
+    <Parameter Name="pAliquotaIpi" Type="decimal" Mode="In" />
+    <Parameter Name="pValorIpi" Type="decimal" Mode="In" />
+    <Parameter Name="pDesconto" Type="decimal" Mode="In" />
+  </Function>
+  <EntityContainer Name="TesteImpostoModelStoreContainer">
+    <EntitySet Name="NotaFiscal" EntityType="Self.NotaFiscal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NotaFiscalItem" EntityType="Self.NotaFiscalItem" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_NotaFiscal" Association="Self.FK_NotaFiscal">
+      <End Role="NotaFiscal" EntitySet="NotaFiscal" />
+      <End Role="NotaFiscalItem" EntitySet="NotaFiscalItem" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
