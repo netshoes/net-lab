@@ -13,3 +13,5 @@ C:\Users\Gleydson\Source\Repos\net-lab\TesteImposto\TesteImposto\obj\Debug\Teste
 C:\Users\Gleydson\Source\Repos\net-lab\TesteImposto\TesteImposto\obj\Debug\TesteImposto.csproj.GenerateResource.Cache
 C:\Users\Gleydson\Source\Repos\net-lab\TesteImposto\TesteImposto\obj\Debug\TesteImposto.exe
 C:\Users\Gleydson\Source\Repos\net-lab\TesteImposto\TesteImposto\obj\Debug\TesteImposto.pdb
+C:\Users\Gleydson\Source\Repos\net-lab\TesteImposto\TesteImposto\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Gleydson\Source\Repos\net-lab\TesteImposto\TesteImposto\bin\Debug\EntityFramework.SqlServer.xml
