@@ -15,13 +15,17 @@ SET NOCOUNT ON
 GO 
 CREATE PROCEDURE P_NOTA_FISCAL_ITEM
 (
-	@pId int,
+	@pId int OUTPUT,
     @pIdNotaFiscal int,
     @pCfop varchar(5),
     @pTipoIcms varchar(20),
     @pBaseIcms decimal(18,5),
     @pAliquotaIcms decimal(18,5),
     @pValorIcms decimal(18,5),
+    @pBaseIpi decimal(18,5),
+    @pAliquotaIpi decimal(18,5),
+    @pValorIpi decimal(18,5),
+	@pDesconto decimal(18,5),
     @pNomeProduto varchar(50),
     @pCodigoProduto varchar(20)
 )
@@ -36,6 +40,10 @@ BEGIN
            ,[BaseIcms]
            ,[AliquotaIcms]
            ,[ValorIcms]
+           ,[BaseIpi]
+           ,[AliquotaIpi]
+           ,[ValorIpi]
+           ,[Desconto]
            ,[NomeProduto]
            ,[CodigoProduto])
 		VALUES
@@ -45,6 +53,10 @@ BEGIN
 			@pBaseIcms,
 			@pAliquotaIcms,
 			@pValorIcms,
+			@pBaseIpi,
+			@pAliquotaIpi,
+			@pValorIpi,
+			@pDesconto,
 			@pNomeProduto,
 			@pCodigoProduto)
 
@@ -59,6 +71,10 @@ BEGIN
 			,[BaseIcms] = @pBaseIcms
 			,[AliquotaIcms] = @pAliquotaIcms
 			,[ValorIcms] = @pValorIcms
+			,[BaseIpi] = @pBaseIpi
+			,[AliquotaIpi] = @pAliquotaIpi
+			,[ValorIpi] = @pValorIpi
+			,[Desconto] = @pDesconto
 			,[NomeProduto] = @pNomeProduto
 			,[CodigoProduto] = @pCodigoProduto
 		 WHERE Id = @pId

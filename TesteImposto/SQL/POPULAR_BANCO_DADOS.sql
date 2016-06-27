@@ -1,3 +1,6 @@
+USE [Teste]
+GO
+
 DECLARE @vIdNota int = 0
 DECLARE @vNumeroNotaFiscal int = 1
 DECLARE @vSerie int = 2
@@ -12,6 +15,10 @@ DECLARE @vTipoIcms varchar(20)
 DECLARE @vBaseIcms decimal(18,5)
 DECLARE @vAliquotaIcms decimal(18,5)
 DECLARE @vValorIcms decimal(18,5)
+DECLARE @vBaseIpi decimal(18,5)
+DECLARE @vAliquotaIpi decimal(18,5)
+DECLARE @vValorIpi decimal(18,5)
+DECLARE @vDesconto decimal(18,5)
 DECLARE @vNomeProduto varchar(50)
 DECLARE @vCodigoProduto varchar(20)
 
@@ -52,6 +59,15 @@ BEGIN
 	SET @vBaseIcms = 100.00
 	SET @vAliquotaIcms = 10
 	SET @vValorIcms = 10
+	SET @vBaseIpi = 100.00
+	SET @vAliquotaIpi = 10
+	SET @vValorIpi = 10
+
+	IF (@vCount % 2) = 0
+		SET @vDesconto = 10
+	ELSE
+		SET @vDesconto = 0
+
 	SET @vNomeProduto = 'PRODUTO DE CARGA'
 	SET @vCodigoProduto = '123-5548-555-22'
 
@@ -63,6 +79,10 @@ BEGIN
 		@pBaseIcms = @vBaseIcms,
 		@pAliquotaIcms = @vAliquotaIcms,
 		@pValorIcms = @vValorIcms,
+		@pBaseIpi = @vBaseIpi,
+		@pAliquotaIpi = @vAliquotaIpi,
+		@pValorIpi = @vValorIpi,
+		@pDesconto = @vDesconto,
 		@pNomeProduto = @vNomeProduto,
 		@pCodigoProduto = @vCodigoProduto
 
