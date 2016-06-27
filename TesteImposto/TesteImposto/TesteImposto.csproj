@@ -78,10 +78,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Imposto.Core\Imposto.Core.csproj">
-      <Project>{2339c0b3-1e95-4cd3-bfba-64b377857016}</Project>
-      <Name>Imposto.Core</Name>
+    <ProjectReference Include="..\TesteImposto.Business\TesteImposto.Business.csproj">
+      <Project>{3D2659FB-BA93-4A0D-8C90-E0BC01742664}</Project>
+      <Name>TesteImposto.Business</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TesteImposto.Entidade\TesteImposto.Entidade.csproj">
+      <Project>{19B4EE65-7F0C-4492-BCB6-13A1FE58CEA4}</Project>
+      <Name>TesteImposto.Entidade</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

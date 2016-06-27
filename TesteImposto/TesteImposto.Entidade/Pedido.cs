@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace Imposto.Core.Domain
+namespace TesteImposto.Entidade
 {
     public class Pedido
     {
         public string EstadoDestino { get; set; }
+
         public string EstadoOrigem { get; set; }
 
         public string NomeCliente { get; set; }
