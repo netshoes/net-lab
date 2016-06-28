@@ -1,0 +1,30 @@
+C:\Users\FAMILIA\Documents\Visual Studio 2015\Projects\TESTE NETSHOES\net-lab-master\TesteImposto\TesteImposto2\bin\Debug\TesteImposto2.exe.config
+C:\Users\FAMILIA\Documents\Visual Studio 2015\Projects\TESTE NETSHOES\net-lab-master\TesteImposto\TesteImposto2\obj\Debug\TesteImposto.csprojResolveAssemblyReference.cache
+C:\Users\FAMILIA\Documents\Visual Studio 2015\Projects\TESTE NETSHOES\net-lab-master\TesteImposto\TesteImposto2\obj\Debug\TesteImposto.FormImposto.resources
+C:\Users\FAMILIA\Documents\Visual Studio 2015\Projects\TESTE NETSHOES\net-lab-master\TesteImposto\TesteImposto2\obj\Debug\TesteImposto2.Properties.Resources.resources
+C:\Users\FAMILIA\Documents\Visual Studio 2015\Projects\TESTE NETSHOES\net-lab-master\TesteImposto\TesteImposto2\obj\Debug\TesteImposto.csproj.GenerateResource.Cache
+C:\Users\FAMILIA\Documents\Visual Studio 2015\Projects\TESTE NETSHOES\net-lab-master\TesteImposto\TesteImposto2\bin\Debug\TesteImposto2.exe
+C:\Users\FAMILIA\Documents\Visual Studio 2015\Projects\TESTE NETSHOES\net-lab-master\TesteImposto\TesteImposto2\bin\Debug\TesteImposto2.pdb
+C:\Users\FAMILIA\Documents\Visual Studio 2015\Projects\TESTE NETSHOES\net-lab-master\TesteImposto\TesteImposto2\bin\Debug\TesteImposto.Dominio.Entidade.dll
+C:\Users\FAMILIA\Documents\Visual Studio 2015\Projects\TESTE NETSHOES\net-lab-master\TesteImposto\TesteImposto2\bin\Debug\TesteImposto.Negocios.dll
+C:\Users\FAMILIA\Documents\Visual Studio 2015\Projects\TESTE NETSHOES\net-lab-master\TesteImposto\TesteImposto2\bin\Debug\TesteImposto.Infra.dll
+C:\Users\FAMILIA\Documents\Visual Studio 2015\Projects\TESTE NETSHOES\net-lab-master\TesteImposto\TesteImposto2\bin\Debug\TesteImposto.Dominio.Entidade.pdb
+C:\Users\FAMILIA\Documents\Visual Studio 2015\Projects\TESTE NETSHOES\net-lab-master\TesteImposto\TesteImposto2\bin\Debug\TesteImposto.Negocios.pdb
+C:\Users\FAMILIA\Documents\Visual Studio 2015\Projects\TESTE NETSHOES\net-lab-master\TesteImposto\TesteImposto2\bin\Debug\TesteImposto.Infra.pdb
+C:\Users\FAMILIA\Documents\Visual Studio 2015\Projects\TESTE NETSHOES\net-lab-master\TesteImposto\TesteImposto2\obj\Debug\TesteImposto2.exe
+C:\Users\FAMILIA\Documents\Visual Studio 2015\Projects\TESTE NETSHOES\net-lab-master\TesteImposto\TesteImposto2\obj\Debug\TesteImposto2.pdb
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto2\bin\Debug\TesteImposto2.exe.config
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto2\obj\Debug\TesteImposto2.exe
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto2\obj\Debug\TesteImposto2.pdb
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto2\bin\Debug\TesteImposto2.exe
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto2\bin\Debug\TesteImposto2.pdb
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto2\bin\Debug\TesteImposto.Dominio.Entidade.dll
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto2\bin\Debug\TesteImposto.Negocios.dll
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto2\bin\Debug\TesteImposto.Infra.dll
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto2\bin\Debug\TesteImposto.Dominio.Entidade.pdb
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto2\bin\Debug\TesteImposto.Negocios.pdb
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto2\bin\Debug\TesteImposto.Infra.pdb
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto2\obj\Debug\TesteImposto.csprojResolveAssemblyReference.cache
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto2\obj\Debug\TesteImposto.FormImposto.resources
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto2\obj\Debug\TesteImposto2.Properties.Resources.resources
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto2\obj\Debug\TesteImposto.csproj.GenerateResource.Cache

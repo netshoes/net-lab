@@ -1,0 +1,13 @@
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto.Testeemissao\bin\Debug\TesteImposto.Testeemissao.dll
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto.Testeemissao\bin\Debug\TesteImposto.Testeemissao.pdb
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto.Testeemissao\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto.Testeemissao\bin\Debug\TesteImposto.Dominio.Entidade.dll
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto.Testeemissao\bin\Debug\TesteImposto.Negocios.dll
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto.Testeemissao\bin\Debug\TesteImposto.Infra.dll
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto.Testeemissao\bin\Debug\TesteImposto.Dominio.Entidade.pdb
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto.Testeemissao\bin\Debug\TesteImposto.Negocios.pdb
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto.Testeemissao\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto.Testeemissao\bin\Debug\TesteImposto.Infra.pdb
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto.Testeemissao\obj\Debug\TesteImposto.Testeemissao.csprojResolveAssemblyReference.cache
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto.Testeemissao\obj\Debug\TesteImposto.Testeemissao.dll
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto.Testeemissao\obj\Debug\TesteImposto.Testeemissao.pdb

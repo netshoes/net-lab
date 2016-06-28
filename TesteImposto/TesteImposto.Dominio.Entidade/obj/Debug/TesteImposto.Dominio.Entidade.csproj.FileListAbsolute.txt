@@ -1,0 +1,8 @@
+C:\Users\FAMILIA\Documents\Visual Studio 2015\Projects\TESTE NETSHOES\net-lab-master\TesteImposto\TesteImposto.Dominio.Entidade\bin\Debug\TesteImposto.Dominio.Entidade.dll
+C:\Users\FAMILIA\Documents\Visual Studio 2015\Projects\TESTE NETSHOES\net-lab-master\TesteImposto\TesteImposto.Dominio.Entidade\bin\Debug\TesteImposto.Dominio.Entidade.pdb
+C:\Users\FAMILIA\Documents\Visual Studio 2015\Projects\TESTE NETSHOES\net-lab-master\TesteImposto\TesteImposto.Dominio.Entidade\obj\Debug\TesteImposto.Dominio.Entidade.dll
+C:\Users\FAMILIA\Documents\Visual Studio 2015\Projects\TESTE NETSHOES\net-lab-master\TesteImposto\TesteImposto.Dominio.Entidade\obj\Debug\TesteImposto.Dominio.Entidade.pdb
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto.Dominio.Entidade\bin\Debug\TesteImposto.Dominio.Entidade.dll
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto.Dominio.Entidade\bin\Debug\TesteImposto.Dominio.Entidade.pdb
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto.Dominio.Entidade\obj\Debug\TesteImposto.Dominio.Entidade.dll
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto.Dominio.Entidade\obj\Debug\TesteImposto.Dominio.Entidade.pdb
