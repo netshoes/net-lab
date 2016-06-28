@@ -19,7 +19,7 @@ namespace TesteImposto
         public FormImposto()
         {
             InitializeComponent();
-            dataGridViewPedidos.AutoGenerateColumns = true;                       
+            dataGridViewPedidos.AutoGenerateColumns = true;
             dataGridViewPedidos.DataSource = GetTablePedidos();
             ResizeColumns();
         }
@@ -32,7 +32,7 @@ namespace TesteImposto
             {
                 var coluna = dataGridViewPedidos.Columns[i];
                 coluna.Width = Convert.ToInt32(mediaWidth);
-            }   
+            }
         }
 
         private object GetTablePedidos()
@@ -42,33 +42,87 @@ namespace TesteImposto
             table.Columns.Add(new DataColumn("Codigo do produto", typeof(string)));
             table.Columns.Add(new DataColumn("Valor", typeof(decimal)));
             table.Columns.Add(new DataColumn("Brinde", typeof(bool)));
-                     
+
             return table;
         }
 
         private void buttonGerarNotaFiscal_Click(object sender, EventArgs e)
-        {            
+        {
             NotaFiscalService service = new NotaFiscalService();
             pedido.EstadoOrigem = txtEstadoOrigem.Text;
             pedido.EstadoDestino = txtEstadoDestino.Text;
             pedido.NomeCliente = textBoxNomeCliente.Text;
 
+            try
+            {
+                pedido.Desconto = Convert.ToDouble(txtDesconto.Text)/100;
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Desconto Inválido");
+            }
+
+            
+
+            
+
             DataTable table = (DataTable)dataGridViewPedidos.DataSource;
+
+
+            pedido.ItensDoPedido.Clear();
 
             foreach (DataRow row in table.Rows)
             {
                 pedido.ItensDoPedido.Add(
                     new PedidoItem()
                     {
-                        Brinde = Convert.ToBoolean(row["Brinde"]),
-                        CodigoProduto =  row["Codigo do produto"].ToString(),
+
+                        Brinde = (row["Brinde"] != DBNull.Value) ? Convert.ToBoolean(row["Brinde"]) : false,
+                        CodigoProduto = row["Codigo do produto"].ToString(),
                         NomeProduto = row["Nome do produto"].ToString(),
-                        ValorItemPedido = Convert.ToDouble(row["Valor"].ToString())            
+                        ValorItemPedido = Convert.ToDouble(row["Valor"].ToString())
                     });
             }
 
-            service.GerarNotaFiscal(pedido);
-            MessageBox.Show("Operação efetuada com sucesso");
+            try
+            {
+                service.GerarNotaFiscal(pedido);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: \n" + ex.ToString());
+            }
+            finally
+            {
+                MessageBox.Show("Operação efetuada com sucesso");
+                LimpaForm();
+            }
+
+
+        }
+
+        private void LimpaForm()
+        {
+            foreach (Control control in this.Controls)
+            {
+
+                if (control is TextBox)
+                {
+                    ((TextBox)control).Clear();
+                }
+                
+
+                if (control is DataGridView)
+                {
+                    foreach (DataGridViewRow row in ((DataGridView)control).Rows)
+                    {
+                        if (!row.IsNewRow)
+                            ((DataGridView)control).Rows.Remove(row);
+                    }                    
+                }
+
+            }
         }
     }
 }

@@ -1,0 +1,11 @@
+C:\Users\Trabalho\Documents\_Desenvolvimento\NetShoes\net-lab\TesteImposto\TesteImposto\bin\Debug\TesteImposto.exe.config
+C:\Users\Trabalho\Documents\_Desenvolvimento\NetShoes\net-lab\TesteImposto\TesteImposto\bin\Debug\TesteImposto.exe
+C:\Users\Trabalho\Documents\_Desenvolvimento\NetShoes\net-lab\TesteImposto\TesteImposto\bin\Debug\TesteImposto.pdb
+C:\Users\Trabalho\Documents\_Desenvolvimento\NetShoes\net-lab\TesteImposto\TesteImposto\bin\Debug\Imposto.Core.dll
+C:\Users\Trabalho\Documents\_Desenvolvimento\NetShoes\net-lab\TesteImposto\TesteImposto\bin\Debug\Imposto.Core.pdb
+C:\Users\Trabalho\Documents\_Desenvolvimento\NetShoes\net-lab\TesteImposto\TesteImposto\obj\Debug\TesteImposto.csprojResolveAssemblyReference.cache
+C:\Users\Trabalho\Documents\_Desenvolvimento\NetShoes\net-lab\TesteImposto\TesteImposto\obj\Debug\TesteImposto.FormImposto.resources
+C:\Users\Trabalho\Documents\_Desenvolvimento\NetShoes\net-lab\TesteImposto\TesteImposto\obj\Debug\TesteImposto.Properties.Resources.resources
+C:\Users\Trabalho\Documents\_Desenvolvimento\NetShoes\net-lab\TesteImposto\TesteImposto\obj\Debug\TesteImposto.csproj.GenerateResource.Cache
+C:\Users\Trabalho\Documents\_Desenvolvimento\NetShoes\net-lab\TesteImposto\TesteImposto\obj\Debug\TesteImposto.exe
+C:\Users\Trabalho\Documents\_Desenvolvimento\NetShoes\net-lab\TesteImposto\TesteImposto\obj\Debug\TesteImposto.pdb
