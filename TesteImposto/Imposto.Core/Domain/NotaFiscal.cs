@@ -17,15 +17,17 @@ namespace Imposto.Core.Domain
         public string EstadoDestino { get; set; }
         public string EstadoOrigem { get; set; }
 
-        public IEnumerable<NotaFiscalItem> ItensDaNotaFiscal { get; set; }
+        public NotaFiscalItem[] ItensDaNotaFiscal { get; set; }
 
         public NotaFiscal()
         {
-            ItensDaNotaFiscal = new List<NotaFiscalItem>();
+            
         }
 
         public void EmitirNotaFiscal(Pedido pedido)
         {
+            List<NotaFiscalItem> itens = null;
+
             this.NumeroNotaFiscal = 99999;
             this.Serie = new Random().Next(Int32.MaxValue);
             this.NomeCliente = pedido.NomeCliente;
@@ -33,6 +35,7 @@ namespace Imposto.Core.Domain
             this.EstadoDestino = pedido.EstadoOrigem;
             this.EstadoOrigem = pedido.EstadoDestino;
 
+            itens = new List<NotaFiscalItem>();
             foreach (PedidoItem itemPedido in pedido.ItensDoPedido)
             {
                 NotaFiscalItem notaFiscalItem = new NotaFiscalItem();
@@ -152,7 +155,21 @@ namespace Imposto.Core.Domain
                 }
                 notaFiscalItem.NomeProduto = itemPedido.NomeProduto;
                 notaFiscalItem.CodigoProduto = itemPedido.CodigoProduto;
-            }            
+
+                notaFiscalItem.BaseIpi = itemPedido.ValorItemPedido;
+                if (itemPedido.Brinde)
+                    notaFiscalItem.AliquotaIpi = 0;
+                else
+                    notaFiscalItem.AliquotaIpi = 0.1;
+                notaFiscalItem.ValorIpi = notaFiscalItem.BaseIpi * notaFiscalItem.AliquotaIpi;
+
+                if (this.EstadoDestino == "SP")
+                    notaFiscalItem.Desconto = 0.1;
+
+                itens.Add(notaFiscalItem);
+            }
+
+            ItensDaNotaFiscal = itens.ToArray();
         }
     }
 }

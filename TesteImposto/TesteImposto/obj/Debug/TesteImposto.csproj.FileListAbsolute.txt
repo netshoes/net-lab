@@ -1,0 +1,11 @@
+C:\Users\ft01\Downloads\net-lab-master\TesteImposto\TesteImposto\bin\Debug\TesteImposto.exe.config
+C:\Users\ft01\Downloads\net-lab-master\TesteImposto\TesteImposto\bin\Debug\TesteImposto.exe
+C:\Users\ft01\Downloads\net-lab-master\TesteImposto\TesteImposto\bin\Debug\TesteImposto.pdb
+C:\Users\ft01\Downloads\net-lab-master\TesteImposto\TesteImposto\bin\Debug\Imposto.Core.dll
+C:\Users\ft01\Downloads\net-lab-master\TesteImposto\TesteImposto\bin\Debug\Imposto.Core.pdb
+C:\Users\ft01\Downloads\net-lab-master\TesteImposto\TesteImposto\obj\Debug\TesteImposto.csprojResolveAssemblyReference.cache
+C:\Users\ft01\Downloads\net-lab-master\TesteImposto\TesteImposto\obj\Debug\TesteImposto.FormImposto.resources
+C:\Users\ft01\Downloads\net-lab-master\TesteImposto\TesteImposto\obj\Debug\TesteImposto.Properties.Resources.resources
+C:\Users\ft01\Downloads\net-lab-master\TesteImposto\TesteImposto\obj\Debug\TesteImposto.csproj.GenerateResource.Cache
+C:\Users\ft01\Downloads\net-lab-master\TesteImposto\TesteImposto\obj\Debug\TesteImposto.exe
+C:\Users\ft01\Downloads\net-lab-master\TesteImposto\TesteImposto\obj\Debug\TesteImposto.pdb
