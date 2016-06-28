@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NotaFiscal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>0</Id>
+  <NumeroNotaFiscal>20290</NumeroNotaFiscal>
+  <Serie>1</Serie>
+  <NomeCliente>geranio</NomeCliente>
+  <EstadoDestino>RO</EstadoDestino>
+  <EstadoOrigem>SP</EstadoOrigem>
+  <ItensDaNotaFiscal>
+    <NotaFiscalItem>
+      <Id>0</Id>
+      <IdNotaFiscal>0</IdNotaFiscal>
+      <Cfop>6.006</Cfop>
+      <TipoIcms>60</TipoIcms>
+      <BaseIcms>456464</BaseIcms>
+      <AliquotaIcms>0.18</AliquotaIcms>
+      <ValorIcms>82163.52</ValorIcms>
+      <NomeProduto>teste</NomeProduto>
+      <CodigoProduto>3233423</CodigoProduto>
+      <BaseIpi>456464</BaseIpi>
+      <AliquotaIpi>0</AliquotaIpi>
+      <ValorIpi>0</ValorIpi>
+      <Desconto>0.1</Desconto>
+    </NotaFiscalItem>
+  </ItensDaNotaFiscal>
+</NotaFiscal>

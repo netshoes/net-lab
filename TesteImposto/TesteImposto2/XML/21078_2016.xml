@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NotaFiscal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>0</Id>
+  <NumeroNotaFiscal>21078</NumeroNotaFiscal>
+  <Serie>1</Serie>
+  <NomeCliente>aluisio marques da franca</NomeCliente>
+  <EstadoDestino>RO</EstadoDestino>
+  <EstadoOrigem>SP</EstadoOrigem>
+  <ItensDaNotaFiscal>
+    <NotaFiscalItem>
+      <Id>0</Id>
+      <IdNotaFiscal>0</IdNotaFiscal>
+      <Cfop>6.006</Cfop>
+      <TipoIcms>60</TipoIcms>
+      <BaseIcms>42342</BaseIcms>
+      <AliquotaIcms>0.18</AliquotaIcms>
+      <ValorIcms>7621.5599999999995</ValorIcms>
+      <NomeProduto>testretew</NomeProduto>
+      <CodigoProduto>1231</CodigoProduto>
+      <BaseIpi>42342</BaseIpi>
+      <AliquotaIpi>0</AliquotaIpi>
+      <ValorIpi>0</ValorIpi>
+      <Desconto>0.1</Desconto>
+    </NotaFiscalItem>
+    <NotaFiscalItem>
+      <Id>0</Id>
+      <IdNotaFiscal>0</IdNotaFiscal>
+      <Cfop>6.006</Cfop>
+      <TipoIcms>60</TipoIcms>
+      <BaseIcms>665</BaseIcms>
+      <AliquotaIcms>0.18</AliquotaIcms>
+      <ValorIcms>119.69999999999999</ValorIcms>
+      <NomeProduto>teterte hfghfgh</NomeProduto>
+      <CodigoProduto>6565</CodigoProduto>
+      <BaseIpi>665</BaseIpi>
+      <AliquotaIpi>0</AliquotaIpi>
+      <ValorIpi>0</ValorIpi>
+      <Desconto>0.1</Desconto>
+    </NotaFiscalItem>
+  </ItensDaNotaFiscal>
+</NotaFiscal>

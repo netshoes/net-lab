@@ -33,7 +33,7 @@ BEGIN
 		SET @vEstadoDestino = 'PE'
 	END
 
-	EXEC [dbo].[P_NOTA_FISCAL] 
+	EXEC [teste].[dbo].[P_NOTA_FISCAL] 
 		@pId = @vIdNota OUTPUT,
 		@pNumeroNotaFiscal = @vNumeroNotaFiscal,
 		@pSerie = @vSerie,
@@ -55,7 +55,7 @@ BEGIN
 	SET @vNomeProduto = 'PRODUTO DE CARGA'
 	SET @vCodigoProduto = '123-5548-555-22'
 
-	EXEC [dbo].[P_NOTA_FISCAL_ITEM]
+	EXEC [teste].[dbo].[P_NOTA_FISCAL_ITEM]
 		@pId = @vIdItem,
 		@pIdNotaFiscal = @vIdNota,
 		@pCfop = @vCfop,

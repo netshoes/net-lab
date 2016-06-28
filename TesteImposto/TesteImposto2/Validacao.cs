@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TesteImposto.Infra
+namespace TesteImposto2
 {
-    public class NotaFiscalRepository
+    class Validacao
     {
+
 
     }
 }
