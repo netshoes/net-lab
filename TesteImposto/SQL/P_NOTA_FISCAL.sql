@@ -1,5 +1,4 @@
-USE [Teste]
-GO
+
 IF OBJECT_ID('dbo.P_NOTA_FISCAL') IS NOT NULL
 BEGIN
     DROP PROCEDURE dbo.P_NOTA_FISCAL
@@ -24,6 +23,10 @@ CREATE PROCEDURE dbo.P_NOTA_FISCAL
 )
 AS
 BEGIN
+	
+
+
+	
 	IF (@pId = 0)
 	BEGIN 
 		INSERT INTO [dbo].[NotaFiscal]
@@ -50,7 +53,8 @@ BEGIN
 		  ,[EstadoDestino] = @pEstadoDestino
 		  ,[EstadoOrigem] = @pEstadoOrigem
 		WHERE Id = @pId
-	END	    
+	END	
+	  
 END
 GO
 GRANT EXECUTE ON dbo.P_NOTA_FISCAL TO [public]

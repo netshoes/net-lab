@@ -1,4 +1,5 @@
 ﻿using Imposto.Core.Domain;
+using Imposto.Core.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,13 @@ namespace Imposto.Core.Service
         public void GerarNotaFiscal(Domain.Pedido pedido)
         {
             NotaFiscal notaFiscal = new NotaFiscal();
-            notaFiscal.EmitirNotaFiscal(pedido);
+            notaFiscal.EmitirNotaFiscal(ref pedido);
+
+            NotaFiscalRepository NotaPersist = new NotaFiscalRepository();
+            if (NotaPersist.EscreveNotaFiscal(notaFiscal)) {
+                NotaPersist.PersisteNotaFiscal(notaFiscal);
+            }
+
         }
     }
 }

@@ -4,6 +4,8 @@ using System.Linq;
 using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
+using System.Xml.Serialization;
 
 namespace Imposto.Core.Domain
 {
@@ -17,21 +19,22 @@ namespace Imposto.Core.Domain
         public string EstadoDestino { get; set; }
         public string EstadoOrigem { get; set; }
 
-        public IEnumerable<NotaFiscalItem> ItensDaNotaFiscal { get; set; }
+        public List<NotaFiscalItem> ItensDaNotaFiscal { get; set; }
 
         public NotaFiscal()
         {
             ItensDaNotaFiscal = new List<NotaFiscalItem>();
         }
 
-        public void EmitirNotaFiscal(Pedido pedido)
+        public void EmitirNotaFiscal(ref Pedido pedido)
         {
+           
             this.NumeroNotaFiscal = 99999;
             this.Serie = new Random().Next(Int32.MaxValue);
             this.NomeCliente = pedido.NomeCliente;
 
-            this.EstadoDestino = pedido.EstadoOrigem;
-            this.EstadoOrigem = pedido.EstadoDestino;
+            this.EstadoDestino = pedido.EstadoDestino;
+            this.EstadoOrigem = pedido.EstadoOrigem;
 
             foreach (PedidoItem itemPedido in pedido.ItensDoPedido)
             {
@@ -144,14 +147,37 @@ namespace Imposto.Core.Domain
                 }
                 notaFiscalItem.ValorIcms = notaFiscalItem.BaseIcms*notaFiscalItem.AliquotaIcms;
 
+
+                notaFiscalItem.BaseIPI = itemPedido.ValorItemPedido; ;
+
                 if (itemPedido.Brinde)
                 {
                     notaFiscalItem.TipoIcms = "60";
                     notaFiscalItem.AliquotaIcms = 0.18;
                     notaFiscalItem.ValorIcms = notaFiscalItem.BaseIcms * notaFiscalItem.AliquotaIcms;
+                    notaFiscalItem.AliquotaIPI = 0;
                 }
+                else {
+                    notaFiscalItem.AliquotaIPI = 0.10;
+                }
+
+                if (this.EstadoDestino == "SP" || this.EstadoDestino == "RJ" || this.EstadoDestino == "MG" || this.EstadoDestino == "ES")
+                {
+
+                    notaFiscalItem.Desconto = 0.10;
+                }
+                else {
+                    notaFiscalItem.Desconto = notaFiscalItem.Desconto;
+                }
+
+
+                notaFiscalItem.ValorIPI = notaFiscalItem.BaseIPI * notaFiscalItem.AliquotaIPI;
+                notaFiscalItem.Desconto = pedido.Desconto;
                 notaFiscalItem.NomeProduto = itemPedido.NomeProduto;
                 notaFiscalItem.CodigoProduto = itemPedido.CodigoProduto;
+
+                this.ItensDaNotaFiscal.Add(notaFiscalItem);
+
             }            
         }
     }

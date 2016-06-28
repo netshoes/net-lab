@@ -37,6 +37,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridViewPedidos = new System.Windows.Forms.DataGridView();
             this.buttonGerarNotaFiscal = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtDesconto = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedidos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,7 +94,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(2, 93);
+            this.label4.Location = new System.Drawing.Point(2, 105);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(80, 13);
             this.label4.TabIndex = 6;
@@ -101,20 +104,45 @@
             // 
             this.dataGridViewPedidos.AllowUserToOrderColumns = true;
             this.dataGridViewPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPedidos.Location = new System.Drawing.Point(6, 109);
+            this.dataGridViewPedidos.Location = new System.Drawing.Point(6, 121);
             this.dataGridViewPedidos.Name = "dataGridViewPedidos";
             this.dataGridViewPedidos.Size = new System.Drawing.Size(1028, 325);
             this.dataGridViewPedidos.TabIndex = 7;
             // 
             // buttonGerarNotaFiscal
             // 
-            this.buttonGerarNotaFiscal.Location = new System.Drawing.Point(907, 440);
+            this.buttonGerarNotaFiscal.Location = new System.Drawing.Point(907, 452);
             this.buttonGerarNotaFiscal.Name = "buttonGerarNotaFiscal";
             this.buttonGerarNotaFiscal.Size = new System.Drawing.Size(127, 23);
             this.buttonGerarNotaFiscal.TabIndex = 8;
             this.buttonGerarNotaFiscal.Text = "Gerar Nota Fiscal";
             this.buttonGerarNotaFiscal.UseVisualStyleBackColor = true;
             this.buttonGerarNotaFiscal.Click += new System.EventHandler(this.buttonGerarNotaFiscal_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(3, 87);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(53, 13);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Desconto";
+            // 
+            // txtDesconto
+            // 
+            this.txtDesconto.Location = new System.Drawing.Point(95, 79);
+            this.txtDesconto.Name = "txtDesconto";
+            this.txtDesconto.Size = new System.Drawing.Size(129, 20);
+            this.txtDesconto.TabIndex = 6;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(224, 83);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(15, 13);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "%";
             // 
             // FormImposto
             // 
@@ -124,8 +152,11 @@
             this.Controls.Add(this.buttonGerarNotaFiscal);
             this.Controls.Add(this.dataGridViewPedidos);
             this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtDesconto);
             this.Controls.Add(this.txtEstadoDestino);
             this.Controls.Add(this.txtEstadoOrigem);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.textBoxNomeCliente);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -149,6 +180,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dataGridViewPedidos;
         private System.Windows.Forms.Button buttonGerarNotaFiscal;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtDesconto;
+        private System.Windows.Forms.Label label6;
     }
 }
 
