@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteImposto.Negocios", "Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteImposto", "TesteImposto2\TesteImposto.csproj", "{74F5B94E-A9E7-4FB5-A86B-F0FE417BAEAF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteImposto.Testeemissao", "TesteImposto.Testeemissao\TesteImposto.Testeemissao.csproj", "{FCC5F3E3-ACAE-48BA-B021-5472F334513E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{74F5B94E-A9E7-4FB5-A86B-F0FE417BAEAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74F5B94E-A9E7-4FB5-A86B-F0FE417BAEAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74F5B94E-A9E7-4FB5-A86B-F0FE417BAEAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCC5F3E3-ACAE-48BA-B021-5472F334513E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCC5F3E3-ACAE-48BA-B021-5472F334513E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCC5F3E3-ACAE-48BA-B021-5472F334513E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCC5F3E3-ACAE-48BA-B021-5472F334513E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,5 +58,6 @@ Global
 		{71853F3C-F0C6-4067-B74D-C81975DE723E} = {ECDC4AB2-D1A2-4183-A93B-60C695CF9BCB}
 		{7DA6F08E-C299-490A-B083-A19AAB70C46D} = {8E69002A-C777-4F0F-B467-925B275C5810}
 		{74F5B94E-A9E7-4FB5-A86B-F0FE417BAEAF} = {686C9DBA-3716-4F11-A007-F248E4CE012B}
+		{FCC5F3E3-ACAE-48BA-B021-5472F334513E} = {44AA3271-1EC4-49B1-8259-44DF9DB687DD}
 	EndGlobalSection
 EndGlobal
