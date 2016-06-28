@@ -1,0 +1,18 @@
+C:\Users\FAMILIA\Documents\Visual Studio 2015\Projects\TESTE NETSHOES\net-lab-master\TesteImposto\TesteImposto.Negocios\bin\Debug\TesteImposto.Negocios.dll
+C:\Users\FAMILIA\Documents\Visual Studio 2015\Projects\TESTE NETSHOES\net-lab-master\TesteImposto\TesteImposto.Negocios\bin\Debug\TesteImposto.Negocios.pdb
+C:\Users\FAMILIA\Documents\Visual Studio 2015\Projects\TESTE NETSHOES\net-lab-master\TesteImposto\TesteImposto.Negocios\bin\Debug\TesteImposto.Dominio.Entidade.dll
+C:\Users\FAMILIA\Documents\Visual Studio 2015\Projects\TESTE NETSHOES\net-lab-master\TesteImposto\TesteImposto.Negocios\bin\Debug\TesteImposto.Infra.dll
+C:\Users\FAMILIA\Documents\Visual Studio 2015\Projects\TESTE NETSHOES\net-lab-master\TesteImposto\TesteImposto.Negocios\bin\Debug\TesteImposto.Dominio.Entidade.pdb
+C:\Users\FAMILIA\Documents\Visual Studio 2015\Projects\TESTE NETSHOES\net-lab-master\TesteImposto\TesteImposto.Negocios\bin\Debug\TesteImposto.Infra.pdb
+C:\Users\FAMILIA\Documents\Visual Studio 2015\Projects\TESTE NETSHOES\net-lab-master\TesteImposto\TesteImposto.Negocios\obj\Debug\TesteImposto.Negocios.csprojResolveAssemblyReference.cache
+C:\Users\FAMILIA\Documents\Visual Studio 2015\Projects\TESTE NETSHOES\net-lab-master\TesteImposto\TesteImposto.Negocios\obj\Debug\TesteImposto.Negocios.dll
+C:\Users\FAMILIA\Documents\Visual Studio 2015\Projects\TESTE NETSHOES\net-lab-master\TesteImposto\TesteImposto.Negocios\obj\Debug\TesteImposto.Negocios.pdb
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto.Negocios\bin\Debug\TesteImposto.Negocios.dll
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto.Negocios\bin\Debug\TesteImposto.Negocios.pdb
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto.Negocios\bin\Debug\TesteImposto.Dominio.Entidade.dll
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto.Negocios\bin\Debug\TesteImposto.Infra.dll
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto.Negocios\bin\Debug\TesteImposto.Dominio.Entidade.pdb
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto.Negocios\bin\Debug\TesteImposto.Infra.pdb
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto.Negocios\obj\Debug\TesteImposto.Negocios.csprojResolveAssemblyReference.cache
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto.Negocios\obj\Debug\TesteImposto.Negocios.dll
+C:\Users\FAMILIA\Documents\GitHub\net-lab\TesteImposto\TesteImposto.Negocios\obj\Debug\TesteImposto.Negocios.pdb
